@@ -34,14 +34,14 @@ def arg_parse():
         train_raw_data = json.load(f)
         max_len,source_voc_Size,target_voc_size,ignore_index = max_length(train_raw_data)
     parser = argparse.ArgumentParser()
-    parser.add_argument("--batch_size", type=int, default=6),
-    parser.add_argument("--num_epochs", type=int, default=20),
+    parser.add_argument("--batch_size", type=int, default=16),
+    parser.add_argument("--num_epochs", type=int, default=40),
     parser.add_argument("--max_length", type=int, default=max_len),
     parser.add_argument("--d_model", type=int, default=512),
     parser.add_argument("--d_ff", type=int, default=2048),
     parser.add_argument("--num_heads", type=int, default=8),
-    parser.add_argument("--num_encoder_layers", type=int, default=2),
-    parser.add_argument("--num_decoder_layer", type=int, default=2),
+    parser.add_argument("--num_encoder_layers", type=int, default=6),
+    parser.add_argument("--num_decoder_layer", type=int, default=6),
     parser.add_argument("--dropout_rate", type=float, default=0.1),
     parser.add_argument("--learning_rate", type=float, default=5e-4),
     parser.add_argument("--warmup_steps", type=int, default=4000),
