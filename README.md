@@ -1,0 +1,1 @@
+In this project, we will build a large language model for text to text translation. In the end of this project, you will able to learn, how to encode text datasets and implement the transformer for LLM according to the paper. 
